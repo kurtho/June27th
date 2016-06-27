@@ -22,11 +22,13 @@ class CanyoningCollectionViewController: UICollectionViewController {
 //        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
-        let spacingWidth = Float(10)
+//        let spacingWidth = Float(10)
         
         let layout = self.collectionViewLayout as! UICollectionViewFlowLayout
-        let width = (Float(UIScreen.mainScreen().bounds.width) - spacingWidth * Float(4 + 1)) / 4
+//        let width = (Float(UIScreen.mainScreen().bounds.width) - spacingWidth * Float(4 + 1)) / 4
+        let width = (UIScreen.mainScreen().bounds.width - 2*5)/4
         layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
+        layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
 //        layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
     }
 

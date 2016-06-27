@@ -14,6 +14,7 @@
 		290E628B1D20CFFB0064244B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E62891D20CFFB0064244B /* LaunchScreen.storyboard */; };
 		290E62931D20D0810064244B /* CanyoningCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62921D20D0810064244B /* CanyoningCollectionViewController.swift */; };
 		290E62951D20D8300064244B /* Pics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62941D20D8300064244B /* Pics.swift */; };
+		290E62E51D2133010064244B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62E41D2133010064244B /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		290E628C1D20CFFB0064244B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		290E62921D20D0810064244B /* CanyoningCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanyoningCollectionViewController.swift; sourceTree = "<group>"; };
 		290E62941D20D8300064244B /* Pics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pics.swift; sourceTree = "<group>"; };
+		290E62E41D2133010064244B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				290E62801D20CFFB0064244B /* AppDelegate.swift */,
 				290E62921D20D0810064244B /* CanyoningCollectionViewController.swift */,
 				290E62821D20CFFB0064244B /* ViewController.swift */,
+				290E62E41D2133010064244B /* CollectionViewCell.swift */,
 				290E62841D20CFFB0064244B /* Main.storyboard */,
 				290E62871D20CFFB0064244B /* Assets.xcassets */,
 				290E62891D20CFFB0064244B /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290E62E51D2133010064244B /* CollectionViewCell.swift in Sources */,
 				290E62951D20D8300064244B /* Pics.swift in Sources */,
 				290E62831D20CFFB0064244B /* ViewController.swift in Sources */,
 				290E62931D20D0810064244B /* CanyoningCollectionViewController.swift in Sources */,
@@ -296,6 +300,7 @@
 				290E62911D20CFFB0064244B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
