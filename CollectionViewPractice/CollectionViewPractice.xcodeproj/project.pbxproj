@@ -15,6 +15,10 @@
 		290E62931D20D0810064244B /* CanyoningCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62921D20D0810064244B /* CanyoningCollectionViewController.swift */; };
 		290E62951D20D8300064244B /* Pics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62941D20D8300064244B /* Pics.swift */; };
 		290E62E51D2133010064244B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62E41D2133010064244B /* CollectionViewCell.swift */; };
+		290E62EE1D2245700064244B /* NibCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62EC1D2245700064244B /* NibCollectionViewCell.swift */; };
+		290E62EF1D2245700064244B /* NibCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290E62ED1D2245700064244B /* NibCollectionViewCell.xib */; };
+		290E62F71D224BCB0064244B /* abcCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E62F01D224AA40064244B /* abcCollectionViewCell.swift */; };
+		290E62F91D224BDD0064244B /* abcCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290E62F11D224AA40064244B /* abcCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		290E62921D20D0810064244B /* CanyoningCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanyoningCollectionViewController.swift; sourceTree = "<group>"; };
 		290E62941D20D8300064244B /* Pics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pics.swift; sourceTree = "<group>"; };
 		290E62E41D2133010064244B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		290E62EC1D2245700064244B /* NibCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCollectionViewCell.swift; sourceTree = "<group>"; };
+		290E62ED1D2245700064244B /* NibCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCollectionViewCell.xib; sourceTree = "<group>"; };
+		290E62F01D224AA40064244B /* abcCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = abcCollectionViewCell.swift; sourceTree = "<group>"; };
+		290E62F11D224AA40064244B /* abcCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = abcCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +71,16 @@
 				290E62801D20CFFB0064244B /* AppDelegate.swift */,
 				290E62921D20D0810064244B /* CanyoningCollectionViewController.swift */,
 				290E62821D20CFFB0064244B /* ViewController.swift */,
+				290E62EC1D2245700064244B /* NibCollectionViewCell.swift */,
+				290E62ED1D2245700064244B /* NibCollectionViewCell.xib */,
 				290E62E41D2133010064244B /* CollectionViewCell.swift */,
 				290E62841D20CFFB0064244B /* Main.storyboard */,
 				290E62871D20CFFB0064244B /* Assets.xcassets */,
 				290E62891D20CFFB0064244B /* LaunchScreen.storyboard */,
 				290E62941D20D8300064244B /* Pics.swift */,
 				290E628C1D20CFFB0064244B /* Info.plist */,
+				290E62F01D224AA40064244B /* abcCollectionViewCell.swift */,
+				290E62F11D224AA40064244B /* abcCollectionViewCell.xib */,
 			);
 			path = CollectionViewPractice;
 			sourceTree = "<group>";
@@ -132,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				290E628B1D20CFFB0064244B /* LaunchScreen.storyboard in Resources */,
+				290E62F91D224BDD0064244B /* abcCollectionViewCell.xib in Resources */,
 				290E62881D20CFFB0064244B /* Assets.xcassets in Resources */,
+				290E62EF1D2245700064244B /* NibCollectionViewCell.xib in Resources */,
 				290E62861D20CFFB0064244B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +161,9 @@
 				290E62E51D2133010064244B /* CollectionViewCell.swift in Sources */,
 				290E62951D20D8300064244B /* Pics.swift in Sources */,
 				290E62831D20CFFB0064244B /* ViewController.swift in Sources */,
+				290E62F71D224BCB0064244B /* abcCollectionViewCell.swift in Sources */,
 				290E62931D20D0810064244B /* CanyoningCollectionViewController.swift in Sources */,
+				290E62EE1D2245700064244B /* NibCollectionViewCell.swift in Sources */,
 				290E62811D20CFFB0064244B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
