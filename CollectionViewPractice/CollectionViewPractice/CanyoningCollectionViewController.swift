@@ -45,8 +45,19 @@ class CanyoningCollectionViewController: UICollectionViewController {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
         if segue.identifier == "ShowPhoto" {
-            let detailViewController = segue.destinationViewController as! ViewController
-            detailViewController.image = UIImage(named: "1")
+//            let detailViewController = segue.destinationViewController as! ViewController
+//            let cellSelected = sender as? UICollectionViewCell
+//            
+//           let indexPathDidSelect = self.collectionView?.indexPathForCell(cellSelected!)
+//            
+//            detailViewController.IMGView?.image =
+            let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
+            let indexPath = indexPaths[0] as NSIndexPath
+            let vc = segue.destinationViewController as! ViewController
+
+            vc.image = UIImage(named: PicsList.pic[indexPath.row].name)!
+
+            
         }
     }
     
@@ -60,12 +71,14 @@ class CanyoningCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 30
+        return PicsList.pic.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
+//        cell.IMGView?.image = UIImage(named: PicsList.pic[indexPath.row].name)
+        cell.IMGView?.image = UIImage(named: PicsList.pic[indexPath.row].name)
+
         // Configure the cell
     
         return cell

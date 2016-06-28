@@ -11,13 +11,14 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-//    let appleProducts = ["1", "2", "3"]
-//    let imageArray = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3") ]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+//        let layout = self.collectionView as! UICollectionViewFlowLayout
+//        let width = (UIScreen.mainScreen().bounds.width - 2*5)/4
+//        layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
+//        layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,7 +52,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
 //            vc.image = self.imageArray[indexPath.row]!
             vc.image = UIImage(named: PicsList.pic[indexPath.row].name)!
-
+//            vc.image = collectionView.indexPathsForSelectedItems()?
         }
     }
     
