@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298470B31D2A9D4B00913250 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298470B21D2A9D4B00913250 /* ProfileImage.swift */; };
 		298FBF641D23BB8C00F03F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FBF631D23BB8C00F03F4E /* AppDelegate.swift */; };
 		298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FBF651D23BB8C00F03F4E /* ViewController.swift */; };
 		298FBF691D23BB8C00F03F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298FBF671D23BB8C00F03F4E /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		298470B21D2A9D4B00913250 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		298FBF601D23BB8C00F03F4E /* FBLoginAndShowImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLoginAndShowImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298FBF631D23BB8C00F03F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		298FBF651D23BB8C00F03F4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		298470B11D2A9D1500913250 /* LocalFile */ = {
+			isa = PBXGroup;
+			children = (
+				298470B21D2A9D4B00913250 /* ProfileImage.swift */,
+			);
+			name = LocalFile;
+			sourceTree = "<group>";
+		};
 		298FBF571D23BB8C00F03F4E = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 				298FBF751D23BC5B00F03F4E /* GoogleService-Info.plist */,
 				298FBF671D23BB8C00F03F4E /* Main.storyboard */,
 				298FBF811D24250500F03F4E /* HomeViewController.swift */,
+				298470B11D2A9D1500913250 /* LocalFile */,
 				298FBF6A1D23BB8C00F03F4E /* Assets.xcassets */,
 				298FBF6C1D23BB8C00F03F4E /* LaunchScreen.storyboard */,
 				298FBF6F1D23BB8C00F03F4E /* Info.plist */,
@@ -226,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */,
+				298470B31D2A9D4B00913250 /* ProfileImage.swift in Sources */,
 				298FBF641D23BB8C00F03F4E /* AppDelegate.swift in Sources */,
 				298FBF821D24250500F03F4E /* HomeViewController.swift in Sources */,
 			);

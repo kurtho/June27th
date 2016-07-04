@@ -13,8 +13,16 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var fbProfilePic: UIImageView!
     @IBOutlet weak var fbName: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var placeLabel: UILabel!
+    @IBOutlet weak var traitLabel: UILabel!
     
     
+    
+    @IBOutlet weak var contentLabel: UILabel!
+//    var profileImage: ProfileImageList!
     
     @IBAction func didTapLogOut(sender: AnyObject) {
         try! FIRAuth.auth()!.signOut()
@@ -45,8 +53,13 @@ class HomeViewController: UIViewController {
         } else {
             // No user is signed in.
         }
-
-
+        profileImage.image = UIImage(named: ProfileImageList.pic[0].name)
+        contentLabel.text = ProfileImageList.pic[0].description
+        nameLabel.text = "蒙奇・D・魯夫"
+        ageLabel.text = "30"
+        placeLabel.text = "海上"
+        traitLabel.text = "吃肉、草帽、橡膠、當上海賊王"
+        
     }
 
     override func didReceiveMemoryWarning() {
