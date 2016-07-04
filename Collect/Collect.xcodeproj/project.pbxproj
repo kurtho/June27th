@@ -64,13 +64,21 @@
 				290E62CC1D2116A70064244B /* ViewController.swift */,
 				290E62CE1D2116A70064244B /* Main.storyboard */,
 				290E62DC1D2118310064244B /* CollectionViewCell.swift */,
-				290E62DE1D2118550064244B /* NewViewController.swift */,
+				2923F4661D26A54D000383A1 /* New Group */,
 				290E62E01D211E290064244B /* Pics.swift */,
 				290E62D11D2116A70064244B /* Assets.xcassets */,
 				290E62D31D2116A70064244B /* LaunchScreen.storyboard */,
 				290E62D61D2116A70064244B /* Info.plist */,
 			);
 			path = Collect;
+			sourceTree = "<group>";
+		};
+		2923F4661D26A54D000383A1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				290E62DE1D2118550064244B /* NewViewController.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +308,7 @@
 				290E62DB1D2116A70064244B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

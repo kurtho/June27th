@@ -70,12 +70,11 @@
 			children = (
 				290E62801D20CFFB0064244B /* AppDelegate.swift */,
 				290E62921D20D0810064244B /* CanyoningCollectionViewController.swift */,
-				290E62821D20CFFB0064244B /* ViewController.swift */,
 				290E62EC1D2245700064244B /* NibCollectionViewCell.swift */,
-				290E62ED1D2245700064244B /* NibCollectionViewCell.xib */,
 				290E62E41D2133010064244B /* CollectionViewCell.swift */,
 				290E62841D20CFFB0064244B /* Main.storyboard */,
 				290E62871D20CFFB0064244B /* Assets.xcassets */,
+				2923F4631D26A24E000383A1 /* New Group */,
 				290E62891D20CFFB0064244B /* LaunchScreen.storyboard */,
 				290E62941D20D8300064244B /* Pics.swift */,
 				290E628C1D20CFFB0064244B /* Info.plist */,
@@ -83,6 +82,15 @@
 				290E62F11D224AA40064244B /* abcCollectionViewCell.xib */,
 			);
 			path = CollectionViewPractice;
+			sourceTree = "<group>";
+		};
+		2923F4631D26A24E000383A1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				290E62821D20CFFB0064244B /* ViewController.swift */,
+				290E62ED1D2245700064244B /* NibCollectionViewCell.xib */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
