@@ -165,7 +165,7 @@
                                         <rect key="frame" x="273" y="20" width="30" height="30"/>
                                         <state key="normal" title="Edit"/>
                                         <connections>
-                                            <segue destination="0F0-NZ-zW1" kind="push" id="8rY-2E-Oo3"/>
+                                            <segue destination="0F0-NZ-zW1" kind="push" id="N8P-GI-ajZ"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U6Y-hk-ebs">
@@ -244,10 +244,10 @@
             </objects>
             <point key="canvasLocation" x="1072" y="-590"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="A44-HJ-trz">
             <objects>
-                <viewController id="0F0-NZ-zW1" sceneMemberID="viewController">
+                <viewController id="0F0-NZ-zW1" customClass="EditProfileViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BCk-5g-6Yh"/>
                         <viewControllerLayoutGuide type="bottom" id="s04-hd-0pT"/>
@@ -255,7 +255,18 @@
                     <view key="view" contentMode="scaleToFill" id="FeN-vO-HpP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJu-l7-aPQ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qJu-l7-aPQ" firstAttribute="leading" secondItem="FeN-vO-HpP" secondAttribute="leading" id="P53-tQ-rp0"/>
+                            <constraint firstItem="s04-hd-0pT" firstAttribute="top" secondItem="qJu-l7-aPQ" secondAttribute="bottom" id="VB9-85-Og8"/>
+                            <constraint firstAttribute="trailing" secondItem="qJu-l7-aPQ" secondAttribute="trailing" id="X6Z-d7-nR3"/>
+                            <constraint firstItem="qJu-l7-aPQ" firstAttribute="top" secondItem="BCk-5g-6Yh" secondAttribute="bottom" id="qfe-CF-5iT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nas-n5-ePf"/>
                 </viewController>

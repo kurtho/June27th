@@ -45,9 +45,12 @@ class HomeViewController: UIViewController {
 //            let uid = user.uid;
             
             self.fbName.text = name
+            if let photoURL = photoUrl {
+                if let data = NSData(contentsOfURL: photoURL) {
+                    self.fbProfilePic.image = UIImage(data: data)
+                }
+            }
             
-            let data = NSData(contentsOfURL: photoUrl!)
-            self.fbProfilePic.image = UIImage(data: data!)
                     // Do any additional setup after loading the view.
 
         } else {
