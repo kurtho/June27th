@@ -266,6 +266,9 @@
                                             <constraint firstAttribute="height" constant="150" id="EX1-Xa-zLu"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="editImageButton:" destination="0F0-NZ-zW1" eventType="touchUpInside" id="gca-4x-UcV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -286,7 +289,6 @@
                     <navigationItem key="navigationItem" id="Nas-n5-ePf"/>
                     <connections>
                         <outlet property="editImage" destination="QRx-0J-DmO" id="Syi-TV-0rx"/>
-                        <outlet property="editImageButton" destination="QRx-0J-DmO" id="WTp-xt-NaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuU-wC-48I" userLabel="First Responder" sceneMemberID="firstResponder"/>

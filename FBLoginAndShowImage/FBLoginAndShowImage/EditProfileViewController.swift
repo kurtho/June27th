@@ -10,11 +10,17 @@ import UIKit
 
 class EditProfileViewController: UIViewController {
     @IBOutlet weak var editImage: UIButton!
-    @IBOutlet weak var editImageButton: UIButton!
+    
+    
+    
+
+    @IBAction func editImageButton(sender: AnyObject) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        editImage.setImage(UIImage(named: "rufy"), forState: UIControlState.Normal)
         // Do any additional setup after loading the view.
     }
 
