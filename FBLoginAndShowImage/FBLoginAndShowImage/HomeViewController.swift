@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var traitLabel: UILabel!
+    @IBOutlet weak var fbProfileImage: UIBarButtonItem!
     
     
     
@@ -37,6 +38,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.fbProfilePic.layer.cornerRadius = self.fbProfilePic.frame.size.width/4
         self.fbProfilePic.clipsToBounds = true
+
         
         if let user = FIRAuth.auth()?.currentUser {
             let name = user.displayName
@@ -48,6 +50,7 @@ class HomeViewController: UIViewController {
             if let photoURL = photoUrl {
                 if let data = NSData(contentsOfURL: photoURL) {
                     self.fbProfilePic.image = UIImage(data: data)
+
                 }
             }
             
@@ -65,6 +68,14 @@ class HomeViewController: UIViewController {
         
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
