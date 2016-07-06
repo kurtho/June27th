@@ -168,7 +168,7 @@
                                         <rect key="frame" x="272" y="8" width="30" height="30"/>
                                         <state key="normal" title="Edit"/>
                                         <connections>
-                                            <segue destination="0F0-NZ-zW1" kind="push" id="vNk-5i-rKn"/>
+                                            <segue destination="0F0-NZ-zW1" kind="push" identifier="homeToEdit" id="vNk-5i-rKn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFU-Tf-mYw">

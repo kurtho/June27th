@@ -8,19 +8,27 @@
 
 import UIKit
 
+
+@objc protocol ChangeFbProfileDelegate : class {
+    func changeProfileImage()
+    func changeProfileNameLabel()
+}
+
 class EditProfileViewController: UIViewController {
+    weak var delegate : ChangeFbProfileDelegate?
+    
+    
+    
     @IBOutlet weak var editImage: UIButton!
     
-    
-    
-
     @IBAction func editImageButton(sender: AnyObject) {
-        
+        delegate?.changeProfileImage()
+        delegate?.changeProfileNameLabel()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        editImage.setImage(UIImage(named: "rufy"), forState: UIControlState.Normal)
+        editImage.setImage(UIImage(named: "nami"), forState: UIControlState.Normal)
         // Do any additional setup after loading the view.
     }
 

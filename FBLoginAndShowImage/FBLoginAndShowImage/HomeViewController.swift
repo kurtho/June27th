@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, ChangeFbProfileDelegate {
     @IBOutlet weak var fbProfilePic: UIImageView!
     @IBOutlet weak var fbName: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
@@ -19,10 +19,19 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var traitLabel: UILabel!
     @IBOutlet weak var fbProfileImage: UIBarButtonItem!
-    
-    
-    
     @IBOutlet weak var contentLabel: UILabel!
+    
+    func changeProfileImage() {
+        profileImage.image = UIImage(named: ProfileImageList.pic[2].name)
+        print("Delegate Image")
+    }
+    func changeProfileNameLabel() {
+        nameLabel.text = ProfileImageList.pic[1].description
+        print("Delegate name")
+    }
+    
+    
+    
 //    var profileImage: ProfileImageList!
     
     @IBAction func didTapLogOut(sender: AnyObject) {
@@ -73,9 +82,6 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBarHidden = true
     }
     
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
@@ -83,7 +89,13 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "homeToEdit" {
+            let editProfile: EditProfileViewController = segue.destinationViewController as! EditProfileViewController
+            editProfile.delegate = self
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
