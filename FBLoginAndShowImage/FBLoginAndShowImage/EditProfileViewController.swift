@@ -28,7 +28,7 @@ class EditProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        editImage.setImage(UIImage(named: "nami"), forState: UIControlState.Normal)
+        editImage.setBackgroundImage(UIImage(named: "nami"), forState: UIControlState.Normal)
         // Do any additional setup after loading the view.
     }
 

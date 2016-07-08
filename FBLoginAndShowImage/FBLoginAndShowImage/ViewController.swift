@@ -20,6 +20,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var loadSpinning: UIActivityIndicatorView!
     @IBOutlet weak var fbView: UIView!
+    @IBOutlet weak var accountField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var accountLoginButton: UIButton!
+    @IBOutlet weak var createAccountButton: UIButton!
 
     
     
@@ -61,6 +65,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewWillAppear(animated: Bool) {
         self.view.layoutIfNeeded()
         self.logginButton.center = self.fbView.center
+        
         //after logout, the logginButton stay still
     }
     override func didReceiveMemoryWarning() {
@@ -73,12 +78,30 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         loadSpinning.startAnimating()
 
         self.logginButton.hidden = true
+        self.accountField.hidden = true
+        self.passwordField.hidden = true
+        self.accountLoginButton.hidden = true
+        self.createAccountButton.hidden = true
+        
+        
+        
+        
         if error != nil {
             self.logginButton.hidden = false
+            
+            self.accountField.hidden = false
+            self.passwordField.hidden = false
+            self.accountLoginButton.hidden = false
+            self.createAccountButton.hidden = false
             loadSpinning.stopAnimating()
             
         }else if (result.isCancelled) {
             self.logginButton.hidden = false
+            
+            self.accountField.hidden = false
+            self.passwordField.hidden = false
+            self.accountLoginButton.hidden = false
+            self.createAccountButton.hidden = false
             loadSpinning.stopAnimating()
             
         }else {

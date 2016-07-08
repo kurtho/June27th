@@ -24,6 +24,7 @@ class HomeViewController: UIViewController, ChangeFbProfileDelegate {
     func changeProfileImage() {
         profileImage.image = UIImage(named: ProfileImageList.pic[2].name)
         print("Delegate Image")
+        print("ProfileImageList.pic  ~\(ProfileImageList.pic[2].name)")
     }
     func changeProfileNameLabel() {
         nameLabel.text = ProfileImageList.pic[1].description

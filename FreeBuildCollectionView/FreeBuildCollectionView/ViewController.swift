@@ -83,7 +83,7 @@ protocol GeneralDataSource : UICollectionViewDelegate, UICollectionViewDataSourc
 
 class HeaderTableDataSourceDelegate: NSObject, GeneralDataSource {
     
-    let headerImages = [UIImage(named:"1"), UIImage(named:"2"), UIImage(named:"3")]
+    let headerImages = [UIImage(named:"4"), UIImage(named:"5"), UIImage(named:"6")]
     
     private let reuseIdentifier = "HeaderImageCollectionCell"
     
@@ -116,12 +116,10 @@ class HeaderTableDataSourceDelegate: NSObject, GeneralDataSource {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HeaderCollectionViewCell
-        
-        let currentImage = headerImages[indexPath.item]
-        
-        cell.headerImage.image = currentImage
-        cell.headerButton.setTitle("Browse more", forState: .Normal)
-        cell.headerButton.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+            cell.headerImage.image = headerImages[indexPath.item]
+
+//        cell.headerButton.setTitle("Browse more", forState: .Normal)
+//        cell.headerButton.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
         
         // Method 1. Add target action
         //        cell.actionButton.addTarget(self, action: #selector(handledActionButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
