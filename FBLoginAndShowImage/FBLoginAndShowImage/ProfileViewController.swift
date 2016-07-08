@@ -37,7 +37,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.collectionView.layer.cornerRadius = self.collectionView.frame.size.width/2
+        self.collectionView.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
