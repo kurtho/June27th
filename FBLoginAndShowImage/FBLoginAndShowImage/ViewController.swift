@@ -24,6 +24,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var accountLoginButton: UIButton!
     @IBOutlet weak var createAccountButton: UIButton!
+    @IBOutlet weak var forgotPassword: UIButton!
 
     
     
@@ -82,13 +83,14 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         self.passwordField.hidden = true
         self.accountLoginButton.hidden = true
         self.createAccountButton.hidden = true
-        
+        self.forgotPassword.hidden = true
         
         
         
         if error != nil {
             self.logginButton.hidden = false
             
+            self.forgotPassword.hidden = false
             self.accountField.hidden = false
             self.passwordField.hidden = false
             self.accountLoginButton.hidden = false
@@ -98,6 +100,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         }else if (result.isCancelled) {
             self.logginButton.hidden = false
             
+            self.forgotPassword.hidden = false
             self.accountField.hidden = false
             self.passwordField.hidden = false
             self.accountLoginButton.hidden = false
