@@ -14,21 +14,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collectionView: UICollectionView!
     
 
-    let headerImages = [UIImage(named:"sanji"), UIImage(named:"solon"), UIImage(named:"usobu")]
-    
-    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return ProfileImageList.pic.count
+        return ProfilePictureList.pic.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileHeadCollectionViewCell
-        cell.profileHead.image = UIImage(contentsOfFile: ProfileImageList.pic[indexPath.row].name)
+        cell.profileHead.image = UIImage(named: ProfilePictureList.pic[indexPath.row].name)
         
         return cell
     }

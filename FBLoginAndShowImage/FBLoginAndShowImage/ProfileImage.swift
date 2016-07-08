@@ -32,3 +32,21 @@ class ProfileImageList {
         self.content = content
     }
 }
+
+class ProfilePictureList {
+    static var pic = [
+        ProfilePictureList(name: "1", description: "", content: ""),
+        ProfilePictureList(name: "2", description: "", content: ""),
+        ProfilePictureList(name: "3", description: "", content: ""),
+        ProfilePictureList(name: "4", description: "", content: "")
+    ]
+    var name: String
+    var description: String
+    var content: String
+    
+    init(name: String, description: String, content: String){
+        self.name = name
+        self.description = description
+        self.content = content
+    }
+}
